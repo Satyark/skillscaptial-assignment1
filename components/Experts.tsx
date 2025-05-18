@@ -5,7 +5,6 @@ type CardProps = {
     image: string;
     title: string;
     description: string;
-    buttonText: string;
     persona: string;
     availability: string;
     fit: string;
@@ -18,7 +17,6 @@ const cardData = [
         image: '/exp1.svg',
         title: 'SAP FICO Consultant',
         description: 'Pre-vetted, ready-to-deploy SAP talent for on-demand projects & implementations.',
-        buttonText: 'Explore SAP Consultants',
         persona: 'Analytical, structured, risk-aware',
         availability: 'Immediate',
         fit: 'BFSI, Manufacturing, 6+ years',
@@ -29,7 +27,6 @@ const cardData = [
         image: '/exp2.svg',
         title: 'SAP MM / Ariba Consultant',
         description: 'Scalable, fully managed SAP teams for end-to-end project delivery.',
-        buttonText: 'Browse Managed Teams',
         persona: 'Fast-learner, collaborative',
         availability: 'Immediate',
         fit: 'Pharma, Retail, 8+ years',
@@ -40,7 +37,6 @@ const cardData = [
         image: '/exp3.svg',
         title: 'SAP SuccessFactors Lead',
         description: 'SAP consulting and integration solutions to accelerate transformation.',
-        buttonText: 'Access Top SAP Consulting',
         persona: 'Empathetic, outcome-focused',
         availability: 'Immediate',
         fit: 'Telecom, Public Sector, 6+ years',
@@ -48,7 +44,7 @@ const cardData = [
         readiness: '85%'
     }]
 
-const Card = ({image, title, buttonText, persona, availability, fit, score, readiness}: CardProps) => {
+const Card = ({image, title, persona, availability, fit, score, readiness}: CardProps) => {
     return (
         <div className='flex flex-col items-center justify-center border border-gray-200 rounded-xl shadow-sm md:w-[413px]'>
             <Image
@@ -128,7 +124,6 @@ const Experts = () => {
             image={card.image}
             title={card.title}
             description={card.description}
-            buttonText={card.buttonText}
             persona={card.persona}
             availability={card.availability}
             fit={card.fit}

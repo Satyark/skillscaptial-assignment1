@@ -1,28 +1,24 @@
 import Image from "next/image";
 
 type CardProps = {
-    image: string;
     title: string;
     description: string;
 }
 const cardData = [
     {
-        image: '/ai.svg',
         title: '"We skipped 2 rounds of interviews because of the Persona report."',
         description: '~ CTO, AI SaaS',
     },
     {
-        image: '/Vector.svg',
         title: '“The match accuracy is unreal. Like having our own vetting panel on demand.”',
         description: '~ VP Engineering, EU Retail',
     },
     {
-        image: '/Frame 4236.svg',
         title: '“They understood our JD better than our own HR team. Loved the accuracy.”',
         description: '~ VP Engineering, EU Retail',
     },
 ]
-export const Card = ({image, title, description}: CardProps) => {
+export const Card = ({ title, description}: CardProps) => {
     return (
         <div className='flex flex-col bg-white items-start gap-2 justify-center border border-gray-200 rounded-xl shadow-sm  p-4'>
         <span className='flex items-center justify-start'>
@@ -54,7 +50,6 @@ const AiPowered = () => {
         {cardData.map((card, index) => (
             <Card
             key={index}
-            image={card.image}
             title={card.title}
             description={card.description}
             />

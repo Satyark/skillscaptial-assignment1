@@ -1,12 +1,9 @@
-import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import { Poppins } from 'next/font/google';
 import Source from "@/components/Source";
 import AiPowered from "@/components/Aipowered";
 import Enterprise from "@/components/Enterprise";
-import Cognitive from "@/components/Cognitive";
-import Deeptech from "@/components/Deeptech";
 import India from "@/components/India";
 import Experts from "@/components/Experts";
 import Trusted from "@/components/Trusted";

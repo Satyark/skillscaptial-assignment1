@@ -6,7 +6,9 @@ const India = () => {
     <div className='flex flex-col justify-center items-center my-5 md:my-10'>
         <div className='flex flex-col items-center justify-center text-center'>
             <p className='text-black md:text-[53px] text-[32px] font-bold'>India - SkillsCapital for SAP & Enterprise Talent</p>
-            <p className='text-black md:text-[16px] text-[16px] font-medium'>India's top SAP talent, combined with our AI-powered vetting, ensures unmatched expertise.</p>
+            <p className='text-black md:text-[16px] text-[16px] font-medium'>
+  India&apos;s top SAP talent, combined with our AI-powered vetting, ensures unmatched expertise.
+</p>
         </div>
         <div className="relative w-screen h-[350px] md:h-[584px]  md:w-[1280px] my-5 md:my-10">
         <Image
@@ -17,7 +19,6 @@ const India = () => {
         />
     
     <div className="absolute inset-0 flex items-center justify-between z-10 px-6">
-  {/* Left Side Content */}
   <span className="max-w-[700px]">
     <p className="md:text-[53px] text-[32px] font-bold mb-6">
       Work with Elite SAP Consultants who have delivered projects for Fortune 500 Companies.
@@ -30,8 +31,6 @@ const India = () => {
       </span>
     </button>
   </span>
-
-  {/* Right Side Left Intentionally Empty */}
   <div className="hidden md:block w-[300px]" />
 </div>
 
